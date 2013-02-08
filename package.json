@@ -1,0 +1,13 @@
+{
+	"name": "alchemist",
+	"author": "Uday Verma <uv@mazira.com>",
+	"description": "Interface to the Alchemy API web service",
+	"version": "0.0.1",
+	"dependencies": {
+		"lodash": "*",
+		"async": "*",
+	},
+	"engines": {
+		"node": ">= 0.8"
+	}
+}
