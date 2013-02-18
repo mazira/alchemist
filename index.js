@@ -19,6 +19,7 @@ var AlchemyAPI = function(options) {
 		o[t + "Concepts"] = _.partial(_.bind(o.makeCall, o), t, "concepts", "GetRankedConcepts");
 		o[t + "Keywords"] = _.partial(_.bind(o.makeCall, o), t, "keywords", "GetRankedKeywords");
 		o[t + "Entities"] = _.partial(_.bind(o.makeCall, o), t, "entities", "GetRankedNamedEntities");
+		o[t + "Sentiment"] = _.partial(_.bind(o.makeCall, o), t, "docSentiment", "GetTextSentiment");
 	});
 }
 

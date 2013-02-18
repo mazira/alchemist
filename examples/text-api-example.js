@@ -19,7 +19,8 @@ var processDoc = function(key) {
 		async.series({
 			entities: _.partial(_.bind(r.textEntities, r), data),
 			concepts: _.partial(_.bind(r.textConcepts, r), data),
-			keywords: _.partial(_.bind(r.textKeywords, r), data)
+			keywords: _.partial(_.bind(r.textKeywords, r), data),
+			sentiment: _.partial(_.bind(r.textSentiment, r), data)
 		}, function(err, res) {
 			if (err) return console.log(err);
 
